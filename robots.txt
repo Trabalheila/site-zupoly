@@ -1,0 +1,8 @@
+# robots.txt — ZUPOLY PROJETOS LTDA
+# Permite a indexação de todo o site pelos mecanismos de busca.
+
+User-agent: *
+Allow: /
+
+# Sitemap (ajuste o domínio quando publicar)
+Sitemap: https://www.zupoly.com.br/sitemap.xml
