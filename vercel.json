@@ -2,9 +2,6 @@
     "$schema": "https://openapi.vercel.sh/vercel.json",
     "cleanUrls": true,
     "trailingSlash": false,
-    "root": ".",
-    "buildCommand": "",
-    "outputDirectory": ".",
     "headers": [
         {
             "source": "/assets/(.*)",
@@ -25,7 +22,7 @@
             ]
         },
         {
-            "source": "/(.*)",  
+            "source": "/(.*)",
             "headers": [
                 { "key": "X-Content-Type-Options", "value": "nosniff" },
                 { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
