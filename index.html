@@ -67,6 +67,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- ALTERAÇÃO: CSS específico para mobile (sempre após responsive.css) -->
+    <link rel="stylesheet" href="assets/css/mobile.css">
 
     <!-- ====================== SCHEMA.ORG (JSON-LD) ====================== -->
     <script type="application/ld+json">
@@ -78,13 +80,15 @@
         "url": "https://www.zupoly.com.br/",
         "logo": "https://www.zupoly.com.br/public/logo.png",
         "image": "https://www.zupoly.com.br/public/logo.png",
-        "telephone": "+55-11-99999-9999",
+        "telephone": "+55-71-99923-1020",
         "email": "contato@zupoly.com.br",
         "areaServed": "BR",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "São Paulo",
-            "addressRegion": "SP",
+            "streetAddress": "Rua Santo Antônio, 21, Centro",
+            "addressLocality": "Candeias",
+            "addressRegion": "BA",
+            "postalCode": "43805-070",
             "addressCountry": "BR"
         },
         "sameAs": [
@@ -216,8 +220,9 @@
             <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
                 <div class="relative" data-reveal="left">
                     <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl aspect-[4/3] bg-slate-900">
+                        <!-- ALTERAÇÃO: imagem real do projeto (public/principal.jpg) -->
                         <img class="lazy w-full h-full object-cover"
-                             data-src="assets/img/projetos/projeto-3d-tubulacao.jpg"
+                             data-src="public/principal.jpg"
                              alt="Projeto 3D de tubulação industrial desenvolvido pela ZUPOLY"
                              width="1200" height="900" loading="lazy"
                              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'%3E%3C/svg%3E">
@@ -284,6 +289,18 @@
                         <div class="bg-slate-900/60 border border-white/5 rounded-xl p-5 text-center">
                             <p class="text-3xl font-display font-extrabold text-brand-400"><span data-counter="100" data-suffix="%">0</span></p>
                             <p class="text-xs text-slate-400 mt-1">Satisfação</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ALTERAÇÃO: bloco do Fundador -->
+                <div class="lg:col-span-2 mt-6" data-reveal>
+                    <div class="founder-card flex items-center gap-6 bg-slate-900/60 border border-white/5 rounded-2xl p-6">
+                        <img src="public/ari.jpg" alt="Arivaldo (Ary) Ferreira de Oliveira Filho — Fundador da ZUPOLY Projetos" class="w-24 h-24 rounded-full object-cover border-2 border-brand-500/40 shrink-0" width="96" height="96" loading="lazy">
+                        <div>
+                            <span class="text-brand-400 font-semibold uppercase tracking-widest text-xs">Fundador</span>
+                            <h3 class="font-display text-xl font-bold mt-1">Arivaldo (Ary) Ferreira de Oliveira Filho</h3>
+                            <p class="mt-2 text-slate-400 text-sm leading-relaxed">Fundador da ZUPOLY Projetos, com ampla experiência em projetos industriais de tubulação, modelagem 3D e engenharia mecânica.</p>
                         </div>
                     </div>
                 </div>
@@ -459,62 +476,44 @@
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
                     <!-- Cada item: defina data-full com o caminho da imagem ao adicioná-la -->
                     <div class="gallery-item" data-category="tubulacao" data-reveal>
-                        <button type="button" class="w-full text-left" data-lightbox data-full="" data-alt="Projeto de tubulação industrial">
+                        <button type="button" class="w-full text-left" data-lightbox data-full="public/tubulacao.jpg" data-alt="Projeto de tubulação industrial">
                             <figure class="rounded-2xl border border-white/5 overflow-hidden aspect-[4/3] relative">
-                                <div class="placeholder placeholder-shimmer w-full h-full flex flex-col items-center justify-center text-slate-500">
-                                    <i class="fa-solid fa-pipe-valve text-3xl"></i>
-                                    <span class="text-xs mt-2">Tubulação</span>
-                                </div>
+                                <img src="public/tubulacao.jpg" alt="Projeto de tubulação industrial" class="w-full h-full object-cover" loading="lazy">
                             </figure>
                         </button>
                     </div>
                     <div class="gallery-item" data-category="3d" data-reveal data-reveal-delay="1">
-                        <button type="button" class="w-full text-left" data-lightbox data-full="" data-alt="Modelagem 3D de planta">
+                        <button type="button" class="w-full text-left" data-lightbox data-full="public/modelagem-3d.jpg" data-alt="Modelagem 3D de planta">
                             <figure class="rounded-2xl border border-white/5 overflow-hidden aspect-[4/3] relative">
-                                <div class="placeholder placeholder-shimmer w-full h-full flex flex-col items-center justify-center text-slate-500">
-                                    <i class="fa-solid fa-cube text-3xl"></i>
-                                    <span class="text-xs mt-2">Modelagem 3D</span>
-                                </div>
+                                <img src="public/modelagem-3d.jpg" alt="Modelagem 3D de planta" class="w-full h-full object-cover" loading="lazy">
                             </figure>
                         </button>
                     </div>
                     <div class="gallery-item" data-category="2d" data-reveal data-reveal-delay="2">
-                        <button type="button" class="w-full text-left" data-lightbox data-full="" data-alt="Projeto 2D / isométrico">
+                        <button type="button" class="w-full text-left" data-lightbox data-full="public/isometrico-2d.jpg" data-alt="Projeto 2D / isométrico">
                             <figure class="rounded-2xl border border-white/5 overflow-hidden aspect-[4/3] relative">
-                                <div class="placeholder placeholder-shimmer w-full h-full flex flex-col items-center justify-center text-slate-500">
-                                    <i class="fa-solid fa-ruler-combined text-3xl"></i>
-                                    <span class="text-xs mt-2">Isométrico 2D</span>
-                                </div>
+                                <img src="public/isometrico-2d.jpg" alt="Projeto 2D / isométrico" class="w-full h-full object-cover" loading="lazy">
                             </figure>
                         </button>
                     </div>
                     <div class="gallery-item" data-category="layout" data-reveal>
-                        <button type="button" class="w-full text-left" data-lightbox data-full="" data-alt="Layout industrial">
+                        <button type="button" class="w-full text-left" data-lightbox data-full="public/Layout.png" data-alt="Layout industrial">
                             <figure class="rounded-2xl border border-white/5 overflow-hidden aspect-[4/3] relative">
-                                <div class="placeholder placeholder-shimmer w-full h-full flex flex-col items-center justify-center text-slate-500">
-                                    <i class="fa-solid fa-industry text-3xl"></i>
-                                    <span class="text-xs mt-2">Layout</span>
-                                </div>
+                                <img src="public/Layout.png" alt="Layout industrial" class="w-full h-full object-cover" loading="lazy">
                             </figure>
                         </button>
                     </div>
                     <div class="gallery-item" data-category="industrial" data-reveal data-reveal-delay="1">
-                        <button type="button" class="w-full text-left" data-lightbox data-full="" data-alt="Planta industrial">
+                        <button type="button" class="w-full text-left" data-lightbox data-full="public/industrial.jpg" data-alt="Planta industrial">
                             <figure class="rounded-2xl border border-white/5 overflow-hidden aspect-[4/3] relative">
-                                <div class="placeholder placeholder-shimmer w-full h-full flex flex-col items-center justify-center text-slate-500">
-                                    <i class="fa-solid fa-warehouse text-3xl"></i>
-                                    <span class="text-xs mt-2">Industrial</span>
-                                </div>
+                                <img src="public/industrial.jpg" alt="Planta industrial" class="w-full h-full object-cover" loading="lazy">
                             </figure>
                         </button>
                     </div>
                     <div class="gallery-item" data-category="3d" data-reveal data-reveal-delay="2">
-                        <button type="button" class="w-full text-left" data-lightbox data-full="" data-alt="Modelagem 3D de tubulação">
+                        <button type="button" class="w-full text-left" data-lightbox data-full="public/planta.jpg" data-alt="Modelagem 3D de tubulação">
                             <figure class="rounded-2xl border border-white/5 overflow-hidden aspect-[4/3] relative">
-                                <div class="placeholder placeholder-shimmer w-full h-full flex flex-col items-center justify-center text-slate-500">
-                                    <i class="fa-solid fa-cubes text-3xl"></i>
-                                    <span class="text-xs mt-2">Modelagem 3D</span>
-                                </div>
+                                <img src="public/planta.jpg" alt="Modelagem 3D de tubulação" class="w-full h-full object-cover" loading="lazy">
                             </figure>
                         </button>
                     </div>
@@ -587,7 +586,7 @@
                         <a href="#" data-whatsapp class="bg-slate-900/60 border border-white/5 rounded-xl p-4 hover:border-brand-500/40 transition">
                             <span class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center mb-3"><i class="fa-brands fa-whatsapp"></i></span>
                             <p class="text-xs text-slate-400">WhatsApp</p>
-                            <p class="text-sm font-semibold">Atendimento rápido</p>
+                            <p class="text-sm font-semibold">(71) 99923-1020</p>
                         </a>
                         <a href="mailto:contato@zupoly.com.br" class="bg-slate-900/60 border border-white/5 rounded-xl p-4 hover:border-brand-500/40 transition">
                             <span class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center mb-3"><i class="fa-solid fa-envelope"></i></span>
@@ -597,7 +596,7 @@
                         <div class="bg-slate-900/60 border border-white/5 rounded-xl p-4">
                             <span class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center mb-3"><i class="fa-solid fa-location-dot"></i></span>
                             <p class="text-xs text-slate-400">Localização</p>
-                            <p class="text-sm font-semibold">São Paulo — SP</p>
+                            <p class="text-sm font-semibold leading-snug">Rua Santo Antônio, 21, Centro<br>Candeias — BA · CEP 43.805-070</p>
                         </div>
                     </div>
 
@@ -647,7 +646,7 @@
 
                 <!-- Mapa (placeholder do Google Maps embed — troque pela localização real) -->
                 <div data-reveal="right" class="rounded-2xl overflow-hidden border border-white/10 min-h-[420px] shadow-2xl">
-                    <iframe title="Localização ZUPOLY Projetos" src="https://www.google.com/maps?q=S%C3%A3o+Paulo,+SP&output=embed" class="w-full h-full min-h-[420px]" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    <iframe title="Localização ZUPOLY Projetos" src="https://www.google.com/maps?q=Rua+Santo+Ant%C3%B4nio,+21,+Centro,+Candeias+-+BA,+43805-070&output=embed" class="w-full h-full min-h-[420px]" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -683,15 +682,15 @@
                 <div>
                     <h3 class="font-display font-semibold text-slate-100">Contato</h3>
                     <ul class="mt-4 space-y-2.5 text-sm text-slate-400">
-                        <li class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-brand-400"></i> <a href="#" data-whatsapp class="hover:text-brand-400 transition">Fale no WhatsApp</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-brand-400"></i> <a href="#" data-whatsapp class="hover:text-brand-400 transition">(71) 99923-1020</a></li>
                         <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-400"></i> contato@zupoly.com.br</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-brand-400"></i> São Paulo — SP</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-location-dot text-brand-400 mt-1"></i> <span>Rua Santo Antônio, 21, Centro<br>Candeias — BA · CEP 43.805-070</span></li>
                     </ul>
                 </div>
             </div>
 
             <div class="mt-12 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
-                <p>&copy; <span id="currentYear">2026</span> ZUPOLY Projetos Ltda. Todos os direitos reservados.</p>
+                <p>&copy; <span id="currentYear">2026</span> ZUPOLY Projetos Ltda &middot; CNPJ 04.120.157/0001-01. Todos os direitos reservados.</p>
                 <p>Projetos industriais &middot; Tubulação 2D e 3D</p>
             </div>
         </div>

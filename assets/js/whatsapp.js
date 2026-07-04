@@ -9,8 +9,8 @@
     'use strict';
 
     // Número no formato internacional, apenas dígitos (55 = Brasil, DDD, número).
-    // PLACEHOLDER — substitua pelo número real da ZUPOLY.
-    const WHATSAPP_NUMBER = '5511999999999';
+    // ALTERAÇÃO: número real da ZUPOLY — (71) 99923-1020.
+    const WHATSAPP_NUMBER = '5571999231020';
 
     // Mensagem inicial pré-preenchida.
     const DEFAULT_MESSAGE = 'Olá! Gostaria de solicitar um orçamento para um projeto de tubulação industrial.';

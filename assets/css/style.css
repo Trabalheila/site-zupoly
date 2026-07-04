@@ -86,9 +86,10 @@ textarea:focus-visible,
    -------------------------------------------------------------------------- */
 .hero {
     background-color: var(--ink-950);
+    /* ALTERAÇÃO: caminho ajustado para a imagem real em /public (a partir de assets/css/) */
     background-image:
         linear-gradient(to right, rgba(6, 13, 24, 0.92), rgba(11, 37, 64, 0.55)),
-        url('../img/hero/tubulacao-industrial.jpg');
+        url('../../public/industrial.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
