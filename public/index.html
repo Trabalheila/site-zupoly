@@ -118,9 +118,10 @@
          ================================================================== -->
     <header id="siteHeader" class="fixed top-0 inset-x-0 z-50 bg-slate-950/70 backdrop-blur-md border-b border-white/5 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-5 lg:px-8">
-            <div class="flex items-center justify-between h-20">
+            <!-- ALTERAÇÃO: cabeçalho e logo maiores (~2.5x) -->
+            <div class="flex items-center justify-between h-28">
                 <a href="#top" class="flex items-center gap-3" aria-label="ZUPOLY Projetos — página inicial">
-                    <img src="logo.png" alt="ZUPOLY Projetos Ltda" class="h-9 w-auto" width="150" height="80">
+                    <img src="logo.png" alt="ZUPOLY Projetos Ltda" class="h-24 w-auto" width="150" height="80">
                 </a>
 
                 <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300" aria-label="Navegação principal">
@@ -185,7 +186,7 @@
                         <a href="#contato" class="btn btn-primary px-8 py-4 text-base">
                             <i class="fa-solid fa-file-signature"></i> Solicitar Orçamento
                         </a>
-                        <a href="#" data-whatsapp class="btn btn-whatsapp px-8 py-4 text-base">
+                        <a href="https://wa.me/5571999231020" data-whatsapp class="btn btn-whatsapp px-8 py-4 text-base">
                             <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
                         </a>
                     </div>
@@ -220,12 +221,11 @@
             <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
                 <div class="relative" data-reveal="left">
                     <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl aspect-[4/3] bg-slate-900">
-                        <!-- ALTERAÇÃO: imagem real do projeto (public/principal.jpg) -->
-                        <img class="lazy w-full h-full object-cover"
-                             data-src="principal.jpg"
-                             alt="Projeto 3D de tubulação industrial desenvolvido pela ZUPOLY"
-                             width="1200" height="900" loading="lazy"
-                             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'%3E%3C/svg%3E">
+                        <!-- ALTERAÇÃO: foto "Ari principal.jpg" no bloco Quem somos -->
+                        <img class="w-full h-full object-cover"
+                             src="Ari%20principal.jpg"
+                             alt="Arivaldo (Ary) Ferreira de Oliveira Filho — ZUPOLY Projetos"
+                             width="1200" height="900" loading="lazy">
                     </div>
                     <div class="absolute -bottom-6 -right-4 sm:right-6 bg-brand-500 text-white rounded-xl px-6 py-5 shadow-xl shadow-brand-500/30">
                         <p class="text-3xl font-display font-extrabold leading-none"><span data-counter="45" data-suffix="+">0</span></p>
@@ -296,7 +296,8 @@
                 <!-- ALTERAÇÃO: bloco do Fundador (foto + cargo + 45 anos) -->
                 <div class="lg:col-span-2 mt-6" data-reveal>
                     <div class="founder-card flex flex-col sm:flex-row items-center gap-6 bg-slate-900/60 border border-white/5 rounded-2xl p-6 sm:p-8 text-center sm:text-left">
-                        <img src="ari.jpg" alt="Arivaldo (Ary) Ferreira de Oliveira Filho — Fundador da ZUPOLY Projetos" class="w-40 h-40 rounded-full object-cover border-4 border-brand-500 shrink-0" width="160" height="160" loading="lazy">
+                        <!-- ALTERAÇÃO: foto do fundador usa Ari.jfif -->
+                        <img src="Ari.jfif" alt="Arivaldo (Ary) Ferreira de Oliveira Filho — Fundador da ZUPOLY Projetos" class="w-40 h-40 rounded-full object-cover border-4 border-brand-500 shrink-0" width="160" height="160" loading="lazy">
                         <div>
                             <span class="text-brand-400 font-semibold uppercase tracking-widest text-xs">Fundador</span>
                             <h3 class="font-display text-2xl font-bold mt-1">Arivaldo (Ary) Ferreira de Oliveira Filho</h3>
@@ -482,43 +483,67 @@
                     <!-- Cada item: defina data-full com o caminho da imagem ao adicioná-la -->
                     <div class="gallery-item" data-category="tubulacao" data-reveal>
                         <button type="button" class="w-full text-left" data-lightbox data-full="tubulacao.jpg" data-alt="Projeto de tubulação industrial">
-                            <figure class="rounded-2xl border border-white/5 overflow-hidden aspect-[4/3] relative">
-                                <img src="tubulacao.jpg" alt="Projeto de tubulação industrial" class="w-full h-full object-cover" loading="lazy">
+                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
+                                <div class="aspect-[4/3] relative overflow-hidden">
+                                    <img src="tubulacao.jpg" alt="Projeto de tubulação industrial" class="w-full h-full object-cover" loading="lazy">
+                                </div>
+                                <!-- ALTERAÇÃO: legenda do item -->
+                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Projeto de Tubulação</figcaption>
                             </figure>
                         </button>
                     </div>
                     <div class="gallery-item" data-category="3d" data-reveal data-reveal-delay="1">
                         <button type="button" class="w-full text-left" data-lightbox data-full="modelagem-3d.jpg" data-alt="Modelagem 3D de planta">
-                            <figure class="rounded-2xl border border-white/5 overflow-hidden aspect-[4/3] relative">
-                                <img src="modelagem-3d.jpg" alt="Modelagem 3D de planta" class="w-full h-full object-cover" loading="lazy">
+                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
+                                <div class="aspect-[4/3] relative overflow-hidden">
+                                    <img src="modelagem-3d.jpg" alt="Modelagem 3D de planta" class="w-full h-full object-cover" loading="lazy">
+                                </div>
+                                <!-- ALTERAÇÃO: legenda do item -->
+                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Modelagem 3D</figcaption>
                             </figure>
                         </button>
                     </div>
                     <div class="gallery-item" data-category="2d" data-reveal data-reveal-delay="2">
                         <button type="button" class="w-full text-left" data-lightbox data-full="isometrico-2d.jpg" data-alt="Projeto 2D / isométrico">
-                            <figure class="rounded-2xl border border-white/5 overflow-hidden aspect-[4/3] relative">
-                                <img src="isometrico-2d.jpg" alt="Projeto 2D / isométrico" class="w-full h-full object-cover" loading="lazy">
+                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
+                                <div class="aspect-[4/3] relative overflow-hidden">
+                                    <img src="isometrico-2d.jpg" alt="Projeto 2D / isométrico" class="w-full h-full object-cover" loading="lazy">
+                                </div>
+                                <!-- ALTERAÇÃO: legenda do item -->
+                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Isométrico 2D</figcaption>
                             </figure>
                         </button>
                     </div>
                     <div class="gallery-item" data-category="layout" data-reveal>
                         <button type="button" class="w-full text-left" data-lightbox data-full="Layout.png" data-alt="Layout industrial">
-                            <figure class="rounded-2xl border border-white/5 overflow-hidden aspect-[4/3] relative">
-                                <img src="Layout.png" alt="Layout industrial" class="w-full h-full object-cover" loading="lazy">
+                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
+                                <div class="aspect-[4/3] relative overflow-hidden">
+                                    <img src="Layout.png" alt="Layout industrial" class="w-full h-full object-cover" loading="lazy">
+                                </div>
+                                <!-- ALTERAÇÃO: legenda do item -->
+                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Layout Industrial</figcaption>
                             </figure>
                         </button>
                     </div>
                     <div class="gallery-item" data-category="industrial" data-reveal data-reveal-delay="1">
                         <button type="button" class="w-full text-left" data-lightbox data-full="industrial.jpg" data-alt="Planta industrial">
-                            <figure class="rounded-2xl border border-white/5 overflow-hidden aspect-[4/3] relative">
-                                <img src="industrial.jpg" alt="Planta industrial" class="w-full h-full object-cover" loading="lazy">
+                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
+                                <div class="aspect-[4/3] relative overflow-hidden">
+                                    <img src="industrial.jpg" alt="Planta industrial" class="w-full h-full object-cover" loading="lazy">
+                                </div>
+                                <!-- ALTERAÇÃO: legenda do item -->
+                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Projeto Industrial</figcaption>
                             </figure>
                         </button>
                     </div>
                     <div class="gallery-item" data-category="3d" data-reveal data-reveal-delay="2">
                         <button type="button" class="w-full text-left" data-lightbox data-full="planta.jpg" data-alt="Modelagem 3D de tubulação">
-                            <figure class="rounded-2xl border border-white/5 overflow-hidden aspect-[4/3] relative">
-                                <img src="planta.jpg" alt="Modelagem 3D de tubulação" class="w-full h-full object-cover" loading="lazy">
+                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
+                                <div class="aspect-[4/3] relative overflow-hidden">
+                                    <img src="planta.jpg" alt="Modelagem 3D de tubulação" class="w-full h-full object-cover" loading="lazy">
+                                </div>
+                                <!-- ALTERAÇÃO: legenda do item -->
+                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Modelagem 3D</figcaption>
                             </figure>
                         </button>
                     </div>
@@ -588,7 +613,7 @@
 
                     <!-- Cards de informação -->
                     <div class="grid sm:grid-cols-3 gap-4 mt-8">
-                        <a href="#" data-whatsapp class="bg-slate-900/60 border border-white/5 rounded-xl p-4 hover:border-brand-500/40 transition">
+                        <a href="https://wa.me/5571999231020" data-whatsapp class="bg-slate-900/60 border border-white/5 rounded-xl p-4 hover:border-brand-500/40 transition">
                             <span class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center mb-3"><i class="fa-brands fa-whatsapp"></i></span>
                             <p class="text-xs text-slate-400">WhatsApp</p>
                             <p class="text-sm font-semibold">(71) 99923-1020</p>
@@ -642,7 +667,7 @@
                         </div>
                         <div class="flex flex-col sm:flex-row gap-3">
                             <button type="submit" class="btn btn-primary px-6 py-3.5"><i class="fa-solid fa-paper-plane"></i> Enviar mensagem</button>
-                            <a href="#" data-whatsapp class="btn btn-whatsapp px-6 py-3.5"><i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp</a>
+                            <a href="https://wa.me/5571999231020" data-whatsapp class="btn btn-whatsapp px-6 py-3.5"><i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp</a>
                         </div>
                         <!-- Mensagem de status do envio -->
                         <p id="formStatus" role="status" aria-live="polite" class="text-sm hidden"></p>
@@ -669,7 +694,7 @@
                     <div class="flex items-center gap-3 mt-6">
                         <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-10 h-10 rounded-lg bg-white/5 hover:bg-brand-500 text-slate-300 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-lg bg-white/5 hover:bg-brand-500 text-slate-300 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" data-whatsapp aria-label="WhatsApp" class="w-10 h-10 rounded-lg bg-white/5 hover:bg-brand-500 text-slate-300 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://wa.me/5571999231020" data-whatsapp aria-label="WhatsApp" class="w-10 h-10 rounded-lg bg-white/5 hover:bg-brand-500 text-slate-300 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
 
@@ -687,7 +712,7 @@
                 <div>
                     <h3 class="font-display font-semibold text-slate-100">Contato</h3>
                     <ul class="mt-4 space-y-2.5 text-sm text-slate-400">
-                        <li class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-brand-400"></i> <a href="#" data-whatsapp class="hover:text-brand-400 transition">(71) 99923-1020</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-brand-400"></i> <a href="https://wa.me/5571999231020" data-whatsapp class="hover:text-brand-400 transition">(71) 99923-1020</a></li>
                         <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-400"></i> contato@zupoly.com.br</li>
                         <li class="flex items-start gap-2"><i class="fa-solid fa-location-dot text-brand-400 mt-1"></i> <span>Rua Santo Antônio, 21, Centro<br>Candeias — BA · CEP 43.805-070</span></li>
                     </ul>
@@ -702,7 +727,7 @@
     </footer>
 
     <!-- WhatsApp flutuante -->
-    <a href="#" data-whatsapp class="wa-float fixed bottom-6 left-6 z-40 w-14 h-14 rounded-full bg-[#22c55e] text-white flex items-center justify-center text-2xl" aria-label="Falar no WhatsApp">
+    <a href="https://wa.me/5571999231020" data-whatsapp class="wa-float fixed bottom-6 left-6 z-40 w-14 h-14 rounded-full bg-[#22c55e] text-white flex items-center justify-center text-2xl" aria-label="Falar no WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 

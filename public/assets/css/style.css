@@ -36,7 +36,7 @@ h1, h2, h3, h4, .font-display {
 
 /* Compensa o header fixo ao navegar via âncora */
 section[id] {
-    scroll-margin-top: 88px;
+    scroll-margin-top: 120px;
 }
 
 /* Foco visível (acessibilidade) */
@@ -89,7 +89,7 @@ textarea:focus-visible,
     /* ALTERAÇÃO: caminho ajustado para a imagem real em /public (a partir de assets/css/) */
     background-image:
         linear-gradient(to right, rgba(6, 13, 24, 0.92), rgba(11, 37, 64, 0.55)),
-        url('../../industrial.jpg');
+        url('../../principal.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
