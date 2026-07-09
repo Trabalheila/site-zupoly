@@ -39,6 +39,13 @@ section[id] {
     scroll-margin-top: 120px;
 }
 
+/* ALTERAÇÃO: cor da barra superior (header) harmonizada com o azul escuro da nova logo.
+   O seletor de ID sobrepõe as classes utilitárias bg-slate-950/70 e bg-slate-950/95
+   alternadas pelo main.js ao rolar a página. */
+#siteHeader {
+    background-color: rgba(7, 21, 43, 0.88); /* azul escuro da logo (aprox. brand-900) */
+}
+
 /* Foco visível (acessibilidade) */
 a:focus-visible,
 button:focus-visible,
