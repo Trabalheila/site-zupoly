@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | ZUPOLY Projetos</title>
+    <meta name="description" content="Portfólio da ZUPOLY Projetos: tubulação industrial, modelagem 3D, isométricos 2D, layout industrial e projetos industriais.">
+    <meta name="author" content="ZUPOLY Projetos Ltda">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#060d18">
+    <link rel="canonical" href="https://www.zupoly.com.br/portfolio.html">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="logo_nova.png">
+    <link rel="apple-touch-icon" href="logo_nova.png">
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef6fe', 100: '#d9ebfc', 300: '#7cb8ee', 400: '#4c9df0',
+                            500: '#2b7fd4', 600: '#1e63b0', 700: '#184f8f', 800: '#143f72', 900: '#0b2540',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Poppins', 'Inter', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+</head>
+
+<body class="bg-[#060d18] text-slate-100 antialiased selection:bg-brand-500/30">
+
+    <a href="#conteudo" class="sr-only focus:not-sr-only focus:absolute focus:z-[60] focus:top-3 focus:left-3 focus:bg-brand-500 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">Pular para o conteúdo</a>
+
+    <!-- HEADER -->
+    <header id="siteHeader" class="fixed top-0 inset-x-0 z-50 bg-slate-950/70 backdrop-blur-md border-b border-white/5 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+            <div class="flex items-center justify-between h-28">
+                <a href="index.html" class="flex items-center gap-3" aria-label="ZUPOLY Projetos — página inicial">
+                    <img src="logo_nova.png" alt="ZUPOLY Projetos Ltda" class="h-24 w-auto" width="150" height="80">
+                </a>
+                <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300" aria-label="Navegação principal">
+                    <a href="index.html#sobre" class="hover:text-brand-400 transition">Sobre</a>
+                    <a href="servicos.html" class="hover:text-brand-400 transition">Serviços</a>
+                    <a href="treinamentos.html" class="hover:text-brand-400 transition">Treinamentos</a>
+                    <a href="processo.html" class="hover:text-brand-400 transition">Processo</a>
+                    <a href="portfolio.html" class="text-brand-400 transition" aria-current="page">Portfólio</a>
+                    <a href="faq.html" class="hover:text-brand-400 transition">FAQ</a>
+                    <a href="contato.html" class="hover:text-brand-400 transition">Contato</a>
+                </nav>
+                <a href="contato.html" class="hidden lg:inline-flex btn btn-primary px-5 py-2.5 text-sm">
+                    <i class="fa-solid fa-paper-plane"></i> Solicitar Orçamento
+                </a>
+                <button id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu"
+                        class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-lg text-slate-200 hover:bg-white/10 transition">
+                    <i class="icon-open fa-solid fa-bars text-xl"></i>
+                    <i class="icon-close fa-solid fa-xmark text-xl hidden"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-white/5 bg-slate-950/95 backdrop-blur">
+            <nav class="max-w-7xl mx-auto px-5 py-4 flex flex-col gap-1 text-slate-200" aria-label="Navegação mobile">
+                <a href="index.html#sobre" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Sobre</a>
+                <a href="servicos.html" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Serviços</a>
+                <a href="treinamentos.html" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Treinamentos</a>
+                <a href="processo.html" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Processo</a>
+                <a href="portfolio.html" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Portfólio</a>
+                <a href="faq.html" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">FAQ</a>
+                <a href="contato.html" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Contato</a>
+                <a href="contato.html" class="mt-2 text-center btn btn-primary py-3">Solicitar Orçamento</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <!-- ALTERAÇÃO: cabeçalho da página (page hero) -->
+        <section class="pt-40 lg:pt-44 pb-14 bg-gradient-to-b from-slate-950 to-[#060d18] border-b border-white/5">
+            <div class="max-w-7xl mx-auto px-5 lg:px-8">
+                <nav class="text-xs text-slate-500 mb-4" aria-label="Trilha de navegação">
+                    <a href="index.html" class="hover:text-brand-400 transition">Início</a>
+                    <span class="mx-2">/</span>
+                    <span class="text-slate-300">Portfólio</span>
+                </nav>
+                <span class="text-brand-400 font-semibold uppercase tracking-widest text-sm">Nossos trabalhos</span>
+                <h1 class="font-display text-4xl lg:text-5xl font-extrabold tracking-tight mt-3">Portfólio</h1>
+                <p class="mt-4 text-slate-400 text-lg max-w-2xl">Uma amostra dos nossos projetos. Novas imagens em breve.</p>
+            </div>
+        </section>
+
+        <!-- PORTFÓLIO (Galeria com filtros + lightbox) -->
+        <section id="portfolio" class="py-24 lg:py-32">
+            <div class="max-w-7xl mx-auto px-5 lg:px-8">
+                <div class="flex flex-wrap justify-center gap-3" role="group" aria-label="Filtros do portfólio" data-reveal>
+                    <button class="filter-btn active px-5 py-2 rounded-full border border-white/10 text-sm font-medium" data-filter="all" aria-pressed="true">Todos</button>
+                    <button class="filter-btn px-5 py-2 rounded-full border border-white/10 text-sm font-medium" data-filter="tubulacao" aria-pressed="false">Tubulação</button>
+                    <button class="filter-btn px-5 py-2 rounded-full border border-white/10 text-sm font-medium" data-filter="3d" aria-pressed="false">3D</button>
+                    <button class="filter-btn px-5 py-2 rounded-full border border-white/10 text-sm font-medium" data-filter="2d" aria-pressed="false">2D</button>
+                    <button class="filter-btn px-5 py-2 rounded-full border border-white/10 text-sm font-medium" data-filter="layout" aria-pressed="false">Layout</button>
+                    <button class="filter-btn px-5 py-2 rounded-full border border-white/10 text-sm font-medium" data-filter="industrial" aria-pressed="false">Industrial</button>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+                    <div class="gallery-item" data-category="tubulacao" data-reveal>
+                        <button type="button" class="w-full text-left" data-lightbox data-full="tubulacao.jpg" data-alt="Projeto de tubulação industrial">
+                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
+                                <div class="aspect-[4/3] relative overflow-hidden">
+                                    <img src="tubulacao.jpg" alt="Projeto de tubulação industrial" class="w-full h-full object-cover" loading="lazy">
+                                </div>
+                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Projeto de Tubulação</figcaption>
+                            </figure>
+                        </button>
+                    </div>
+                    <div class="gallery-item" data-category="3d" data-reveal data-reveal-delay="1">
+                        <button type="button" class="w-full text-left" data-lightbox data-full="modelagem-3d.jpg" data-alt="Modelagem 3D de planta">
+                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
+                                <div class="aspect-[4/3] relative overflow-hidden">
+                                    <img src="modelagem-3d.jpg" alt="Modelagem 3D de planta" class="w-full h-full object-cover" loading="lazy">
+                                </div>
+                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Modelagem 3D</figcaption>
+                            </figure>
+                        </button>
+                    </div>
+                    <div class="gallery-item" data-category="2d" data-reveal data-reveal-delay="2">
+                        <button type="button" class="w-full text-left" data-lightbox data-full="isometrico-2d.jpg" data-alt="Projeto 2D / isométrico">
+                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
+                                <div class="aspect-[4/3] relative overflow-hidden">
+                                    <img src="isometrico-2d.jpg" alt="Projeto 2D / isométrico" class="w-full h-full object-cover" loading="lazy">
+                                </div>
+                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Isométrico 2D</figcaption>
+                            </figure>
+                        </button>
+                    </div>
+                    <div class="gallery-item" data-category="layout" data-reveal>
+                        <button type="button" class="w-full text-left" data-lightbox data-full="Layout.png" data-alt="Layout industrial">
+                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
+                                <div class="aspect-[4/3] relative overflow-hidden">
+                                    <img src="Layout.png" alt="Layout industrial" class="w-full h-full object-cover" loading="lazy">
+                                </div>
+                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Layout Industrial</figcaption>
+                            </figure>
+                        </button>
+                    </div>
+                    <div class="gallery-item" data-category="industrial" data-reveal data-reveal-delay="1">
+                        <button type="button" class="w-full text-left" data-lightbox data-full="industrial.jpg" data-alt="Planta industrial">
+                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
+                                <div class="aspect-[4/3] relative overflow-hidden">
+                                    <img src="industrial.jpg" alt="Planta industrial" class="w-full h-full object-cover" loading="lazy">
+                                </div>
+                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Projeto Industrial</figcaption>
+                            </figure>
+                        </button>
+                    </div>
+                    <div class="gallery-item" data-category="3d" data-reveal data-reveal-delay="2">
+                        <button type="button" class="w-full text-left" data-lightbox data-full="planta.jpg" data-alt="Modelagem 3D de tubulação">
+                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
+                                <div class="aspect-[4/3] relative overflow-hidden">
+                                    <img src="planta.jpg" alt="Modelagem 3D de tubulação" class="w-full h-full object-cover" loading="lazy">
+                                </div>
+                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Plantas 2D</figcaption>
+                            </figure>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-[#04080f] border-t border-white/5 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+            <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+                <div class="lg:col-span-2 max-w-sm">
+                    <img src="logo_nova.png" alt="ZUPOLY Projetos Ltda" class="h-10 w-auto" width="150" height="80">
+                    <p class="mt-5 text-slate-400 text-sm leading-relaxed">Projetos industriais de tubulação 2D e 3D, modelagem, isométricos, layout industrial e engenharia mecânica — com precisão, qualidade e tecnologia.</p>
+                    <div class="flex items-center gap-3 mt-6">
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-10 h-10 rounded-lg bg-white/5 hover:bg-brand-500 text-slate-300 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-lg bg-white/5 hover:bg-brand-500 text-slate-300 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/5571999231020" data-whatsapp aria-label="WhatsApp" class="w-10 h-10 rounded-lg bg-white/5 hover:bg-brand-500 text-slate-300 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-display font-semibold text-slate-100">Links rápidos</h3>
+                    <ul class="mt-4 space-y-2.5 text-sm text-slate-400">
+                        <li><a href="index.html#sobre" class="hover:text-brand-400 transition">Sobre</a></li>
+                        <li><a href="servicos.html" class="hover:text-brand-400 transition">Serviços</a></li>
+                        <li><a href="treinamentos.html" class="hover:text-brand-400 transition">Treinamentos</a></li>
+                        <li><a href="processo.html" class="hover:text-brand-400 transition">Processo</a></li>
+                        <li><a href="portfolio.html" class="hover:text-brand-400 transition">Portfólio</a></li>
+                        <li><a href="faq.html" class="hover:text-brand-400 transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-display font-semibold text-slate-100">Contato</h3>
+                    <ul class="mt-4 space-y-2.5 text-sm text-slate-400">
+                        <li class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-brand-400"></i> <a href="https://wa.me/5571999231020" data-whatsapp class="hover:text-brand-400 transition">(71) 99923-1020</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-400"></i> diretoria@zupolyprojetos.com.br</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-location-dot text-brand-400 mt-1"></i> <span>Rua R 13 DE MAIO, 280, 2º andar, Centro<br>Candeias - BA · CEP 43.805-000</span></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-building text-brand-400"></i> CNPJ 04.120.157/0001-01</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+                <p>&copy; <span id="currentYear">2026</span> ZUPOLY Projetos Ltda &middot; CNPJ 04.120.157/0001-01. Todos os direitos reservados.</p>
+                <p>Projetos industriais &middot; Tubulação 2D e 3D</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5571999231020" data-whatsapp class="wa-float fixed bottom-6 left-6 z-40 w-14 h-14 rounded-full bg-[#22c55e] text-white flex items-center justify-center text-2xl" aria-label="Falar no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <button id="backToTop" type="button" aria-label="Voltar ao topo" class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-brand-500 hover:bg-brand-600 text-white shadow-lg shadow-brand-500/30 flex items-center justify-center transition">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Lightbox do portfólio -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visualização de imagem">
+        <button type="button" data-lightbox-close class="absolute top-5 right-5 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition" aria-label="Fechar">
+            <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+        <img src="" alt="">
+    </div>
+
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/animations.js" defer></script>
+    <script src="assets/js/gallery.js" defer></script>
+    <script src="assets/js/whatsapp.js" defer></script>
+</body>
+</html>

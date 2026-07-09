@@ -1,0 +1,90 @@
+/* ==========================================================================
+   ZUPOLY PROJETOS LTDA — mobile.css
+   Estilos específicos para dispositivos móveis. Reúne as regras
+   @media (max-width: ...) que antes estavam em responsive.css e adiciona
+   otimizações de experiência para telas menores.
+   Incluir SEMPRE depois de responsive.css no index.html.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Tablet e abaixo: desativa parallax (melhor performance e evita "jump")
+   (MOVIDO de responsive.css)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1023px) {
+    .hero {
+        background-attachment: scroll;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile: ajustes de tipografia, espaçamento do hero e timeline
+   (MOVIDO de responsive.css)
+   -------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+    .hero {
+        min-height: 92vh;
+    }
+    .lightbox img {
+        max-width: 94vw;
+        max-height: 74vh;
+    }
+    /* Timeline vertical com linha à esquerda */
+    .timeline::before {
+        left: 20px;
+    }
+    .timeline-step {
+        padding-left: 3.25rem;
+    }
+    .timeline-dot {
+        position: absolute;
+        left: 0;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   ALTERAÇÃO: otimizações extras de experiência mobile
+   -------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+    /* Evita rolagem horizontal acidental */
+    html, body {
+        overflow-x: hidden;
+    }
+
+    /* Botões ocupam a largura total e ficam mais fáceis de tocar */
+    .btn {
+        width: 100%;
+    }
+
+    /* Cartão do fundador empilha imagem e texto */
+    .founder-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .founder-card img {
+        margin: 0 auto;
+    }
+
+    /* Botões flutuantes (WhatsApp e voltar ao topo) um pouco menores */
+    .wa-float {
+        width: 3.25rem;
+        height: 3.25rem;
+        bottom: 1rem;
+        left: 1rem;
+    }
+    #backToTop {
+        width: 2.75rem;
+        height: 2.75rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Telas bem pequenas: reduz ainda mais os espaçamentos verticais
+   -------------------------------------------------------------------------- */
+@media (max-width: 380px) {
+    section {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+}
