@@ -20,18 +20,15 @@
     <meta property="og:title" content="ZUPOLY Projetos | Tubulação Industrial 2D e 3D">
     <meta property="og:description" content="Especialistas em projetos industriais com foco em precisão, qualidade e tecnologia. Modelagem 3D, isométricos e layout industrial.">
     <meta property="og:url" content="https://www.zupoly.com.br/">
-    <!-- ALTERAÇÃO: nova logo -->
     <meta property="og:image" content="https://www.zupoly.com.br/public/logo_nova.png">
 
     <!-- ====================== TWITTER CARDS ====================== -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ZUPOLY Projetos | Tubulação Industrial 2D e 3D">
     <meta name="twitter:description" content="Projetos industriais com precisão, qualidade e tecnologia.">
-    <!-- ALTERAÇÃO: nova logo -->
     <meta name="twitter:image" content="https://www.zupoly.com.br/public/logo_nova.png">
 
     <!-- ====================== ÍCONES / PWA ====================== -->
-    <!-- ALTERAÇÃO: nova logo (favicon / apple-touch) -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="public/logo_nova.png">
     <link rel="apple-touch-icon" href="public/logo_nova.png">
@@ -70,7 +67,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- ALTERAÇÃO: CSS específico para mobile (sempre após responsive.css) -->
     <link rel="stylesheet" href="assets/css/mobile.css">
 
     <!-- ====================== SCHEMA.ORG (JSON-LD) ====================== -->
@@ -84,7 +80,7 @@
         "logo": "https://www.zupoly.com.br/public/logo_nova.png",
         "image": "https://www.zupoly.com.br/public/logo_nova.png",
         "telephone": "+55-71-99923-1020",
-        "email": "diretoria@zupoly@projetos.com.br",
+        "email": "diretoria@zupolyprojetos.com.br",
         "areaServed": "BR",
         "address": {
             "@type": "PostalAddress",
@@ -117,28 +113,27 @@
     <a href="#conteudo" class="sr-only focus:not-sr-only focus:absolute focus:z-[60] focus:top-3 focus:left-3 focus:bg-brand-500 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">Pular para o conteúdo</a>
 
     <!-- ==================================================================
-         HEADER
+         HEADER (compartilhado entre as páginas)
          ================================================================== -->
     <header id="siteHeader" class="fixed top-0 inset-x-0 z-50 bg-slate-950/70 backdrop-blur-md border-b border-white/5 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-5 lg:px-8">
-            <!-- ALTERAÇÃO: cabeçalho e logo maiores (~2.5x) -->
             <div class="flex items-center justify-between h-28">
-                <a href="#top" class="flex items-center gap-3" aria-label="ZUPOLY Projetos — página inicial">
-                    <!-- ALTERAÇÃO: nova logo -->
+                <a href="index.html" class="flex items-center gap-3" aria-label="ZUPOLY Projetos — página inicial">
                     <img src="public/logo_nova.png" alt="ZUPOLY Projetos Ltda" class="h-24 w-auto" width="150" height="80">
                 </a>
 
+                <!-- ALTERAÇÃO: navegação agora aponta para páginas separadas (multipágina) -->
                 <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300" aria-label="Navegação principal">
-                    <a href="#sobre" class="hover:text-brand-400 transition">Sobre</a>
-                    <a href="#servicos" class="hover:text-brand-400 transition">Serviços</a>
-                    <a href="#treinamentos" class="hover:text-brand-400 transition">Treinamentos</a>
-                    <a href="#processo" class="hover:text-brand-400 transition">Processo</a>
-                    <a href="#portfolio" class="hover:text-brand-400 transition">Portfólio</a>
-                    <a href="#faq" class="hover:text-brand-400 transition">FAQ</a>
-                    <a href="#contato" class="hover:text-brand-400 transition">Contato</a>
+                    <a href="index.html#sobre" class="text-brand-400 transition" aria-current="page">Sobre</a>
+                    <a href="servicos.html" class="hover:text-brand-400 transition">Serviços</a>
+                    <a href="treinamentos.html" class="hover:text-brand-400 transition">Treinamentos</a>
+                    <a href="processo.html" class="hover:text-brand-400 transition">Processo</a>
+                    <a href="portfolio.html" class="hover:text-brand-400 transition">Portfólio</a>
+                    <a href="faq.html" class="hover:text-brand-400 transition">FAQ</a>
+                    <a href="contato.html" class="hover:text-brand-400 transition">Contato</a>
                 </nav>
 
-                <a href="#contato" class="hidden lg:inline-flex btn btn-primary px-5 py-2.5 text-sm">
+                <a href="contato.html" class="hidden lg:inline-flex btn btn-primary px-5 py-2.5 text-sm">
                     <i class="fa-solid fa-paper-plane"></i> Solicitar Orçamento
                 </a>
 
@@ -152,14 +147,14 @@
 
         <div id="mobileMenu" class="hidden lg:hidden border-t border-white/5 bg-slate-950/95 backdrop-blur">
             <nav class="max-w-7xl mx-auto px-5 py-4 flex flex-col gap-1 text-slate-200" aria-label="Navegação mobile">
-                <a href="#sobre" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Sobre</a>
-                <a href="#servicos" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Serviços</a>
-                <a href="#treinamentos" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Treinamentos</a>
-                <a href="#processo" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Processo</a>
-                <a href="#portfolio" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Portfólio</a>
-                <a href="#faq" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">FAQ</a>
-                <a href="#contato" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Contato</a>
-                <a href="#contato" class="mt-2 text-center btn btn-primary py-3">Solicitar Orçamento</a>
+                <a href="index.html#sobre" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Sobre</a>
+                <a href="servicos.html" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Serviços</a>
+                <a href="treinamentos.html" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Treinamentos</a>
+                <a href="processo.html" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Processo</a>
+                <a href="portfolio.html" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Portfólio</a>
+                <a href="faq.html" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">FAQ</a>
+                <a href="contato.html" class="py-3 px-2 rounded-lg hover:bg-white/5 transition">Contato</a>
+                <a href="contato.html" class="mt-2 text-center btn btn-primary py-3">Solicitar Orçamento</a>
             </nav>
         </div>
     </header>
@@ -184,6 +179,7 @@
                         <span class="text-gradient">Tubulação 2D e 3D</span>
                     </h1>
 
+                    <!-- Slogan -->
                     <p data-reveal data-reveal-delay="2" class="mt-5 font-display text-xl sm:text-2xl font-semibold text-brand-300">
                         Excelência em Projetos Industriais e Capacitação Técnica.
                     </p>
@@ -193,7 +189,7 @@
                     </p>
 
                     <div data-reveal data-reveal-delay="3" class="mt-10 flex flex-wrap gap-4">
-                        <a href="#contato" class="btn btn-primary px-8 py-4 text-base">
+                        <a href="contato.html" class="btn btn-primary px-8 py-4 text-base">
                             <i class="fa-solid fa-file-signature"></i> Solicitar Orçamento
                         </a>
                         <a href="https://wa.me/5571999231020" data-whatsapp class="btn btn-whatsapp px-8 py-4 text-base">
@@ -225,13 +221,12 @@
         </section>
 
         <!-- ==============================================================
-             QUEM SOMOS
+             QUEM SOMOS (última seção da página inicial)
              ============================================================== -->
         <section id="sobre" class="py-24 lg:py-32">
             <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
                 <div class="relative" data-reveal="left">
                     <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl aspect-[4/3] bg-slate-900">
-                        <!-- ALTERAÇÃO: foto "Ari principal.jpg" no bloco Quem somos -->
                         <img class="w-full h-full object-cover"
                              src="public/Ari%20principal.jpg"
                              alt="Arivaldo (Ary) Ferreira de Oliveira Filho — ZUPOLY Projetos"
@@ -301,12 +296,17 @@
                             <p class="text-xs text-slate-400 mt-1">Satisfação</p>
                         </div>
                     </div>
+
+                    <!-- ALTERAÇÃO: chamada para as demais páginas -->
+                    <div class="mt-10 flex flex-wrap gap-4">
+                        <a href="servicos.html" class="btn btn-primary px-6 py-3.5 text-sm"><i class="fa-solid fa-list-check"></i> Ver serviços</a>
+                        <a href="treinamentos.html" class="btn btn-ghost px-6 py-3.5 text-sm"><i class="fa-solid fa-graduation-cap"></i> Treinamentos</a>
+                    </div>
                 </div>
 
-                <!-- ALTERAÇÃO: bloco do Fundador (foto + cargo + 45 anos) -->
+                <!-- Bloco do Fundador (foto + cargo + 45 anos) -->
                 <div class="lg:col-span-2 mt-6" data-reveal>
                     <div class="founder-card flex flex-col sm:flex-row items-center gap-6 bg-slate-900/60 border border-white/5 rounded-2xl p-6 sm:p-8 text-center sm:text-left">
-                        <!-- ALTERAÇÃO: foto do fundador usa Ari.jfif -->
                         <img src="public/Ari.jfif" alt="Arivaldo (Ary) Ferreira de Oliveira Filho — Fundador da ZUPOLY Projetos" class="w-40 h-40 rounded-full object-cover border-4 border-brand-500 shrink-0" width="160" height="160" loading="lazy">
                         <div>
                             <span class="text-brand-400 font-semibold uppercase tracking-widest text-xs">Fundador</span>
@@ -322,444 +322,15 @@
                 </div>
             </div>
         </section>
-
-        <!-- ==============================================================
-             SERVIÇOS
-             ============================================================== -->
-        <section id="servicos" class="py-24 lg:py-32 bg-grid border-y border-white/5">
-            <div class="max-w-7xl mx-auto px-5 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto" data-reveal>
-                    <span class="text-brand-400 font-semibold uppercase tracking-widest text-sm">O que fazemos</span>
-                    <h2 class="font-display text-3xl lg:text-4xl font-bold tracking-tight mt-3">Nossos serviços</h2>
-                    <p class="mt-4 text-slate-400 text-lg">Soluções completas em engenharia e projetos industriais.</p>
-                </div>
-
-                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
-                    <!-- 1 -->
-                    <article class="service-card p-7" data-reveal data-reveal-delay="1">
-                        <div class="service-icon w-14 h-14 bg-brand-500/10 text-brand-400 rounded-xl flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-pipe-valve"></i></div>
-                        <h3 class="text-lg font-bold">Projeto de Tubulação</h3>
-                        <p class="mt-2 text-slate-400 text-sm leading-relaxed">Concepção e detalhamento de sistemas de tubulação industrial.</p>
-                    </article>
-                    <!-- 2 -->
-                    <article class="service-card p-7" data-reveal data-reveal-delay="2">
-                        <div class="service-icon w-14 h-14 bg-brand-500/10 text-brand-400 rounded-xl flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-cube"></i></div>
-                        <h3 class="text-lg font-bold">Modelagem 3D</h3>
-                        <p class="mt-2 text-slate-400 text-sm leading-relaxed">Maquetes eletrônicas de alta fidelidade com detecção de interferências.</p>
-                    </article>
-                    <!-- 3 -->
-                    <article class="service-card p-7" data-reveal data-reveal-delay="3">
-                        <div class="service-icon w-14 h-14 bg-brand-500/10 text-brand-400 rounded-xl flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-drafting-compass"></i></div>
-                        <h3 class="text-lg font-bold">Projeto Executivo</h3>
-                        <p class="mt-2 text-slate-400 text-sm leading-relaxed">Documentação técnica completa para execução e montagem em campo.</p>
-                    </article>
-                    <!-- 4 -->
-                    <article class="service-card p-7" data-reveal data-reveal-delay="4">
-                        <div class="service-icon w-14 h-14 bg-brand-500/10 text-brand-400 rounded-xl flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-industry"></i></div>
-                        <h3 class="text-lg font-bold">Layout Industrial</h3>
-                        <p class="mt-2 text-slate-400 text-sm leading-relaxed">Arranjo otimizado de equipamentos e fluxos dentro da planta.</p>
-                    </article>
-                    <!-- 5 -->
-                    <article class="service-card p-7" data-reveal data-reveal-delay="1">
-                        <div class="service-icon w-14 h-14 bg-brand-500/10 text-brand-400 rounded-xl flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-warehouse"></i></div>
-                        <h3 class="text-lg font-bold">Plantas Industriais</h3>
-                        <p class="mt-2 text-slate-400 text-sm leading-relaxed">Projetos completos de plantas industriais do conceito à obra.</p>
-                    </article>
-                    <!-- 6 -->
-                    <article class="service-card p-7" data-reveal data-reveal-delay="2">
-                        <div class="service-icon w-14 h-14 bg-brand-500/10 text-brand-400 rounded-xl flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-ruler-combined"></i></div>
-                        <h3 class="text-lg font-bold">Isométricos</h3>
-                        <p class="mt-2 text-slate-400 text-sm leading-relaxed">Desenhos isométricos precisos com listas de materiais (MTO).</p>
-                    </article>
-                    <!-- 7 -->
-                    <article class="service-card p-7" data-reveal data-reveal-delay="3">
-                        <div class="service-icon w-14 h-14 bg-brand-500/10 text-brand-400 rounded-xl flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-clipboard-check"></i></div>
-                        <h3 class="text-lg font-bold">As Built</h3>
-                        <p class="mt-2 text-slate-400 text-sm leading-relaxed">Atualização de projetos conforme executado em campo.</p>
-                    </article>
-                    <!-- 8 -->
-                    <article class="service-card p-7" data-reveal data-reveal-delay="4">
-                        <div class="service-icon w-14 h-14 bg-brand-500/10 text-brand-400 rounded-xl flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-layer-group"></i></div>
-                        <h3 class="text-lg font-bold">Compatibilização</h3>
-                        <p class="mt-2 text-slate-400 text-sm leading-relaxed">Integração de disciplinas eliminando conflitos entre projetos.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==============================================================
-             CAPACITAÇÃO E TREINAMENTOS
-             ============================================================== -->
-        <section id="treinamentos" class="py-24 lg:py-32 bg-slate-950/60 border-b border-white/5">
-            <div class="max-w-7xl mx-auto px-5 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto" data-reveal>
-                    <span class="text-brand-400 font-semibold uppercase tracking-widest text-sm">Capacitação e Treinamentos</span>
-                    <h2 class="font-display text-3xl lg:text-4xl font-bold tracking-tight mt-3">Treinamento preparatório online de projeto de tubulação industrial</h2>
-                    <p class="mt-5 text-slate-400 text-lg leading-relaxed">
-                        A <strong class="text-slate-200">ZUPOLY Projetos Ltda</strong> também atua na formação e qualificação de
-                        profissionais da área industrial, oferecendo cursos e treinamentos voltados ao desenvolvimento de
-                        competências em projetos de tubulação industrial.
-                    </p>
-                </div>
-
-                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
-                    <article class="service-card p-7" data-reveal data-reveal-delay="1">
-                        <div class="service-icon w-14 h-14 bg-brand-500/10 text-brand-400 rounded-xl flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-pipe-valve"></i></div>
-                        <h3 class="text-lg font-bold">Projeto de Tubulação Industrial</h3>
-                        <p class="mt-2 text-slate-400 text-sm leading-relaxed">Fundamentos e prática no desenvolvimento de projetos de tubulação industrial.</p>
-                    </article>
-                    <article class="service-card p-7" data-reveal data-reveal-delay="2">
-                        <div class="service-icon w-14 h-14 bg-brand-500/10 text-brand-400 rounded-xl flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-cube"></i></div>
-                        <h3 class="text-lg font-bold">Modelagem 3D</h3>
-                        <p class="mt-2 text-slate-400 text-sm leading-relaxed">Criação de maquetes eletrônicas e modelagem tridimensional de plantas.</p>
-                    </article>
-                    <article class="service-card p-7" data-reveal data-reveal-delay="3">
-                        <div class="service-icon w-14 h-14 bg-brand-500/10 text-brand-400 rounded-xl flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-ruler-combined"></i></div>
-                        <h3 class="text-lg font-bold">Isométricos</h3>
-                        <p class="mt-2 text-slate-400 text-sm leading-relaxed">Elaboração de desenhos isométricos e listas de materiais (MTO).</p>
-                    </article>
-                    <article class="service-card p-7" data-reveal data-reveal-delay="1">
-                        <div class="service-icon w-14 h-14 bg-brand-500/10 text-brand-400 rounded-xl flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-drafting-compass"></i></div>
-                        <h3 class="text-lg font-bold">AutoCAD e Plant 3D</h3>
-                        <p class="mt-2 text-slate-400 text-sm leading-relaxed">Uso das principais ferramentas CAD aplicadas a projetos industriais.</p>
-                    </article>
-                    <article class="service-card p-7" data-reveal data-reveal-delay="2">
-                        <div class="service-icon w-14 h-14 bg-brand-500/10 text-brand-400 rounded-xl flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-industry"></i></div>
-                        <h3 class="text-lg font-bold">Layout Industrial</h3>
-                        <p class="mt-2 text-slate-400 text-sm leading-relaxed">Planejamento e arranjo de equipamentos e fluxos dentro da planta.</p>
-                    </article>
-                    <article class="service-card p-7" data-reveal data-reveal-delay="3">
-                        <div class="service-icon w-14 h-14 bg-brand-500/10 text-brand-400 rounded-xl flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-clipboard-check"></i></div>
-                        <h3 class="text-lg font-bold">Interpretação Técnica</h3>
-                        <p class="mt-2 text-slate-400 text-sm leading-relaxed">Leitura e interpretação de projetos, normas e documentação técnica.</p>
-                    </article>
-                </div>
-
-                <div class="mt-14 text-center" data-reveal>
-                    <a href="https://wa.me/5571999231020" data-whatsapp class="btn btn-primary px-8 py-4 text-base">
-                        <i class="fa-solid fa-graduation-cap"></i> Quero me capacitar
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==============================================================
-             DIFERENCIAIS
-             ============================================================== -->
-        <section id="diferenciais" class="py-24 lg:py-32">
-            <div class="max-w-7xl mx-auto px-5 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto" data-reveal>
-                    <span class="text-brand-400 font-semibold uppercase tracking-widest text-sm">Por que a ZUPOLY</span>
-                    <h2 class="font-display text-3xl lg:text-4xl font-bold tracking-tight mt-3">Nossos diferenciais</h2>
-                </div>
-
-                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
-                    <div class="metal-border rounded-2xl p-7 flex items-start gap-4" data-reveal data-reveal-delay="1">
-                        <span class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-bullseye"></i></span>
-                        <div><h3 class="font-bold text-lg">Alta precisão</h3><p class="mt-1 text-slate-400 text-sm">Projetos exatos que reduzem retrabalho na obra.</p></div>
-                    </div>
-                    <div class="metal-border rounded-2xl p-7 flex items-start gap-4" data-reveal data-reveal-delay="2">
-                        <span class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-gauge-high"></i></span>
-                        <div><h3 class="font-bold text-lg">Entrega rápida</h3><p class="mt-1 text-slate-400 text-sm">Cronogramas ágeis sem abrir mão da qualidade.</p></div>
-                    </div>
-                    <div class="metal-border rounded-2xl p-7 flex items-start gap-4" data-reveal data-reveal-delay="3">
-                        <span class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-sliders"></i></span>
-                        <div><h3 class="font-bold text-lg">Projetos personalizados</h3><p class="mt-1 text-slate-400 text-sm">Soluções sob medida para cada planta.</p></div>
-                    </div>
-                    <div class="metal-border rounded-2xl p-7 flex items-start gap-4" data-reveal data-reveal-delay="1">
-                        <span class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-headset"></i></span>
-                        <div><h3 class="font-bold text-lg">Suporte técnico</h3><p class="mt-1 text-slate-400 text-sm">Acompanhamento próximo do início ao fim.</p></div>
-                    </div>
-                    <div class="metal-border rounded-2xl p-7 flex items-start gap-4" data-reveal data-reveal-delay="2">
-                        <span class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-object-group"></i></span>
-                        <div><h3 class="font-bold text-lg">Compatibilização</h3><p class="mt-1 text-slate-400 text-sm">Disciplinas integradas sem interferências.</p></div>
-                    </div>
-                    <div class="metal-border rounded-2xl p-7 flex items-start gap-4" data-reveal data-reveal-delay="3">
-                        <span class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-cubes"></i></span>
-                        <div><h3 class="font-bold text-lg">Tecnologia 3D</h3><p class="mt-1 text-slate-400 text-sm">Modelagem avançada para decisões seguras.</p></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==============================================================
-             PROCESSO (Timeline)
-             ============================================================== -->
-        <section id="processo" class="py-24 lg:py-32 bg-slate-950/60 border-y border-white/5">
-            <div class="max-w-6xl mx-auto px-5 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto" data-reveal>
-                    <span class="text-brand-400 font-semibold uppercase tracking-widest text-sm">Como trabalhamos</span>
-                    <h2 class="font-display text-3xl lg:text-4xl font-bold tracking-tight mt-3">Nosso processo</h2>
-                    <p class="mt-4 text-slate-400 text-lg">Da primeira conversa à entrega final, com transparência em cada etapa.</p>
-                </div>
-
-                <ol class="timeline mt-16 space-y-10 lg:space-y-0">
-                    <li class="timeline-step relative pl-16 lg:pl-0" data-reveal data-reveal-delay="1">
-                        <span class="timeline-dot w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center font-display font-bold text-lg absolute left-0 lg:static">1</span>
-                        <h3 class="font-bold text-lg mt-0 lg:mt-0">Contato</h3>
-                        <p class="mt-1 text-slate-400 text-sm lg:px-2">Entendimento inicial da sua necessidade e escopo.</p>
-                    </li>
-                    <li class="timeline-step relative pl-16 lg:pl-0" data-reveal data-reveal-delay="2">
-                        <span class="timeline-dot w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center font-display font-bold text-lg absolute left-0 lg:static">2</span>
-                        <h3 class="font-bold text-lg">Levantamento</h3>
-                        <p class="mt-1 text-slate-400 text-sm lg:px-2">Coleta de dados técnicos e visita quando necessário.</p>
-                    </li>
-                    <li class="timeline-step relative pl-16 lg:pl-0" data-reveal data-reveal-delay="3">
-                        <span class="timeline-dot w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center font-display font-bold text-lg absolute left-0 lg:static">3</span>
-                        <h3 class="font-bold text-lg">Projeto</h3>
-                        <p class="mt-1 text-slate-400 text-sm lg:px-2">Desenvolvimento em 2D/3D com modelagem e isométricos.</p>
-                    </li>
-                    <li class="timeline-step relative pl-16 lg:pl-0" data-reveal data-reveal-delay="4">
-                        <span class="timeline-dot w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center font-display font-bold text-lg absolute left-0 lg:static">4</span>
-                        <h3 class="font-bold text-lg">Revisão</h3>
-                        <p class="mt-1 text-slate-400 text-sm lg:px-2">Validação, compatibilização e ajustes finais.</p>
-                    </li>
-                    <li class="timeline-step relative pl-16 lg:pl-0" data-reveal data-reveal-delay="5">
-                        <span class="timeline-dot w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center font-display font-bold text-lg absolute left-0 lg:static">5</span>
-                        <h3 class="font-bold text-lg">Entrega</h3>
-                        <p class="mt-1 text-slate-400 text-sm lg:px-2">Documentação completa pronta para a execução.</p>
-                    </li>
-                </ol>
-            </div>
-        </section>
-
-        <!-- ==============================================================
-             PORTFÓLIO (Galeria com filtros + lightbox)
-             ============================================================== -->
-        <section id="portfolio" class="py-24 lg:py-32">
-            <div class="max-w-7xl mx-auto px-5 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto" data-reveal>
-                    <span class="text-brand-400 font-semibold uppercase tracking-widest text-sm">Nossos trabalhos</span>
-                    <h2 class="font-display text-3xl lg:text-4xl font-bold tracking-tight mt-3">Portfólio</h2>
-                    <p class="mt-4 text-slate-400 text-lg">Uma amostra dos nossos projetos. Novas imagens em breve.</p>
-                </div>
-
-                <!-- Filtros -->
-                <div class="flex flex-wrap justify-center gap-3 mt-10" role="group" aria-label="Filtros do portfólio" data-reveal>
-                    <button class="filter-btn active px-5 py-2 rounded-full border border-white/10 text-sm font-medium" data-filter="all" aria-pressed="true">Todos</button>
-                    <button class="filter-btn px-5 py-2 rounded-full border border-white/10 text-sm font-medium" data-filter="tubulacao" aria-pressed="false">Tubulação</button>
-                    <button class="filter-btn px-5 py-2 rounded-full border border-white/10 text-sm font-medium" data-filter="3d" aria-pressed="false">3D</button>
-                    <button class="filter-btn px-5 py-2 rounded-full border border-white/10 text-sm font-medium" data-filter="2d" aria-pressed="false">2D</button>
-                    <button class="filter-btn px-5 py-2 rounded-full border border-white/10 text-sm font-medium" data-filter="layout" aria-pressed="false">Layout</button>
-                    <button class="filter-btn px-5 py-2 rounded-full border border-white/10 text-sm font-medium" data-filter="industrial" aria-pressed="false">Industrial</button>
-                </div>
-
-                <!-- Grade da galeria (placeholders prontos para receber imagens) -->
-                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-                    <!-- Cada item: defina data-full com o caminho da imagem ao adicioná-la -->
-                    <div class="gallery-item" data-category="tubulacao" data-reveal>
-                        <button type="button" class="w-full text-left" data-lightbox data-full="public/tubulacao.jpg" data-alt="Projeto de tubulação industrial">
-                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
-                                <div class="aspect-[4/3] relative overflow-hidden">
-                                    <img src="public/tubulacao.jpg" alt="Projeto de tubulação industrial" class="w-full h-full object-cover" loading="lazy">
-                                </div>
-                                <!-- ALTERAÇÃO: legenda do item -->
-                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Projeto de Tubulação</figcaption>
-                            </figure>
-                        </button>
-                    </div>
-                    <div class="gallery-item" data-category="3d" data-reveal data-reveal-delay="1">
-                        <button type="button" class="w-full text-left" data-lightbox data-full="public/modelagem-3d.jpg" data-alt="Modelagem 3D de planta">
-                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
-                                <div class="aspect-[4/3] relative overflow-hidden">
-                                    <img src="public/modelagem-3d.jpg" alt="Modelagem 3D de planta" class="w-full h-full object-cover" loading="lazy">
-                                </div>
-                                <!-- ALTERAÇÃO: legenda do item -->
-                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Modelagem 3D</figcaption>
-                            </figure>
-                        </button>
-                    </div>
-                    <div class="gallery-item" data-category="2d" data-reveal data-reveal-delay="2">
-                        <button type="button" class="w-full text-left" data-lightbox data-full="public/isometrico-2d.jpg" data-alt="Projeto 2D / isométrico">
-                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
-                                <div class="aspect-[4/3] relative overflow-hidden">
-                                    <img src="public/isometrico-2d.jpg" alt="Projeto 2D / isométrico" class="w-full h-full object-cover" loading="lazy">
-                                </div>
-                                <!-- ALTERAÇÃO: legenda do item -->
-                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Isométrico 2D</figcaption>
-                            </figure>
-                        </button>
-                    </div>
-                    <div class="gallery-item" data-category="layout" data-reveal>
-                        <button type="button" class="w-full text-left" data-lightbox data-full="public/Layout.png" data-alt="Layout industrial">
-                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
-                                <div class="aspect-[4/3] relative overflow-hidden">
-                                    <img src="public/Layout.png" alt="Layout industrial" class="w-full h-full object-cover" loading="lazy">
-                                </div>
-                                <!-- ALTERAÇÃO: legenda do item -->
-                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Layout Industrial</figcaption>
-                            </figure>
-                        </button>
-                    </div>
-                    <div class="gallery-item" data-category="industrial" data-reveal data-reveal-delay="1">
-                        <button type="button" class="w-full text-left" data-lightbox data-full="public/industrial.jpg" data-alt="Planta industrial">
-                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
-                                <div class="aspect-[4/3] relative overflow-hidden">
-                                    <img src="public/industrial.jpg" alt="Planta industrial" class="w-full h-full object-cover" loading="lazy">
-                                </div>
-                                <!-- ALTERAÇÃO: legenda do item -->
-                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Projeto Industrial</figcaption>
-                            </figure>
-                        </button>
-                    </div>
-                    <div class="gallery-item" data-category="3d" data-reveal data-reveal-delay="2">
-                        <button type="button" class="w-full text-left" data-lightbox data-full="public/planta.jpg" data-alt="Modelagem 3D de tubulação">
-                            <figure class="rounded-2xl border border-white/5 overflow-hidden">
-                                <div class="aspect-[4/3] relative overflow-hidden">
-                                    <img src="public/planta.jpg" alt="Modelagem 3D de tubulação" class="w-full h-full object-cover" loading="lazy">
-                                </div>
-                                <!-- ALTERAÇÃO: legenda do item -->
-                                <figcaption class="py-3 px-4 text-sm font-semibold text-slate-200 text-center bg-slate-900/70">Plantas 2D</figcaption>
-                            </figure>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==============================================================
-             FAQ
-             ============================================================== -->
-        <section id="faq" class="py-24 lg:py-32 bg-slate-950/60 border-y border-white/5">
-            <div class="max-w-3xl mx-auto px-5 lg:px-8">
-                <div class="text-center" data-reveal>
-                    <span class="text-brand-400 font-semibold uppercase tracking-widest text-sm">Dúvidas frequentes</span>
-                    <h2 class="font-display text-3xl lg:text-4xl font-bold tracking-tight mt-3">Perguntas &amp; Respostas</h2>
-                </div>
-
-                <div class="mt-12 space-y-4">
-                    <div class="faq-item bg-slate-900/60 border border-white/5 rounded-xl overflow-hidden" data-reveal>
-                        <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 text-left px-6 py-5" aria-expanded="false">
-                            <span class="font-semibold">Quais softwares são utilizados?</span>
-                            <i class="faq-icon fa-solid fa-plus text-brand-400 shrink-0"></i>
-                        </button>
-                        <div class="faq-answer"><p class="px-6 pb-5 text-slate-400 text-sm leading-relaxed">Trabalhamos com AutoCAD, AutoCAD Plant 3D e outras plataformas de modelagem 3D e detalhamento, sempre de acordo com o padrão exigido pelo cliente.</p></div>
-                    </div>
-                    <div class="faq-item bg-slate-900/60 border border-white/5 rounded-xl overflow-hidden" data-reveal>
-                        <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 text-left px-6 py-5" aria-expanded="false">
-                            <span class="font-semibold">Quanto tempo demora um projeto?</span>
-                            <i class="faq-icon fa-solid fa-plus text-brand-400 shrink-0"></i>
-                        </button>
-                        <div class="faq-answer"><p class="px-6 pb-5 text-slate-400 text-sm leading-relaxed">O prazo depende do escopo e da complexidade. Após o levantamento, apresentamos um cronograma detalhado com as etapas e entregas.</p></div>
-                    </div>
-                    <div class="faq-item bg-slate-900/60 border border-white/5 rounded-xl overflow-hidden" data-reveal>
-                        <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 text-left px-6 py-5" aria-expanded="false">
-                            <span class="font-semibold">Atendem todo o Brasil?</span>
-                            <i class="faq-icon fa-solid fa-plus text-brand-400 shrink-0"></i>
-                        </button>
-                        <div class="faq-answer"><p class="px-6 pb-5 text-slate-400 text-sm leading-relaxed">Sim. Atendemos de forma remota e presencial, desenvolvendo projetos para plantas industriais em todas as regiões do país.</p></div>
-                    </div>
-                    <div class="faq-item bg-slate-900/60 border border-white/5 rounded-xl overflow-hidden" data-reveal>
-                        <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 text-left px-6 py-5" aria-expanded="false">
-                            <span class="font-semibold">Como solicitar um orçamento?</span>
-                            <i class="faq-icon fa-solid fa-plus text-brand-400 shrink-0"></i>
-                        </button>
-                        <div class="faq-answer"><p class="px-6 pb-5 text-slate-400 text-sm leading-relaxed">Preencha o formulário de contato ou fale conosco pelo WhatsApp com o escopo do projeto. Retornamos com uma proposta técnica e comercial sem compromisso.</p></div>
-                    </div>
-                    <div class="faq-item bg-slate-900/60 border border-white/5 rounded-xl overflow-hidden" data-reveal>
-                        <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 text-left px-6 py-5" aria-expanded="false">
-                            <span class="font-semibold">Posso enviar plantas existentes?</span>
-                            <i class="faq-icon fa-solid fa-plus text-brand-400 shrink-0"></i>
-                        </button>
-                        <div class="faq-answer"><p class="px-6 pb-5 text-slate-400 text-sm leading-relaxed">Sim. Trabalhamos a partir de plantas e documentos existentes, inclusive para serviços de As Built e compatibilização.</p></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==============================================================
-             CONTATO
-             ============================================================== -->
-        <section id="contato" class="py-24 lg:py-32">
-            <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-12">
-                <div data-reveal="left">
-                    <span class="text-brand-400 font-semibold uppercase tracking-widest text-sm">Fale conosco</span>
-                    <h2 class="font-display text-3xl lg:text-4xl font-bold tracking-tight mt-3">Solicite seu orçamento</h2>
-                    <p class="mt-4 text-slate-400">Conte com um projeto preciso, seguro e otimizado. Respondemos em até 1 dia útil.</p>
-
-                    <!-- Cards de informação -->
-                    <div class="grid sm:grid-cols-3 gap-4 mt-8">
-                        <a href="https://wa.me/5571999231020" data-whatsapp class="bg-slate-900/60 border border-white/5 rounded-xl p-4 hover:border-brand-500/40 transition">
-                            <span class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center mb-3"><i class="fa-brands fa-whatsapp"></i></span>
-                            <p class="text-xs text-slate-400">WhatsApp</p>
-                            <p class="text-sm font-semibold">(71) 99923-1020</p>
-                        </a>
-                        <!-- ALTERAÇÃO: novo e-mail -->
-                        <a href="mailto:diretoria@zupoly@projetos.com.br" class="bg-slate-900/60 border border-white/5 rounded-xl p-4 hover:border-brand-500/40 transition">
-                            <span class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center mb-3"><i class="fa-solid fa-envelope"></i></span>
-                            <p class="text-xs text-slate-400">E-mail</p>
-                            <p class="text-sm font-semibold break-all">diretoria@zupoly@projetos.com.br</p>
-                        </a>
-                        <div class="bg-slate-900/60 border border-white/5 rounded-xl p-4">
-                            <span class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center mb-3"><i class="fa-solid fa-location-dot"></i></span>
-                            <p class="text-xs text-slate-400">Localização</p>
-                            <!-- ALTERAÇÃO: novo endereço -->
-                            <p class="text-sm font-semibold leading-snug">Rua R 13 DE MAIO, 280, 2º andar, Centro<br>Candeias - BA · CEP 43.805-000</p>
-                        </div>
-                    </div>
-
-                    <!-- Formulário
-                         Integração: FormSubmit (https://formsubmit.co) — não exige cadastro.
-                         >>> Troque o e-mail em data-endpoint pelo e-mail real que receberá as mensagens. <<<
-                         Na PRIMEIRA vez, o FormSubmit envia um e-mail de confirmação que deve ser aceito. -->
-                    <!-- ALTERAÇÃO: novo e-mail no endpoint do formulário -->
-                    <form id="contactForm" class="mt-8 space-y-4" method="post" novalidate aria-label="Formulário de contato"
-                          data-endpoint="https://formsubmit.co/ajax/diretoria@zupoly@projetos.com.br">
-                        <!-- Configurações do FormSubmit -->
-                        <input type="hidden" name="_subject" value="Novo contato pelo site ZUPOLY">
-                        <input type="hidden" name="_template" value="table">
-                        <!-- Honeypot anti-spam (deve permanecer vazio) -->
-                        <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
-                        <div class="grid sm:grid-cols-2 gap-4">
-                            <div>
-                                <label for="nome" class="block text-sm font-medium text-slate-300 mb-1.5">Nome</label>
-                                <input id="nome" name="nome" type="text" required autocomplete="name" class="w-full rounded-lg bg-slate-900 border border-white/10 px-4 py-3 text-sm placeholder-slate-500 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30 outline-none transition" placeholder="Seu nome completo">
-                            </div>
-                            <div>
-                                <label for="empresa" class="block text-sm font-medium text-slate-300 mb-1.5">Empresa</label>
-                                <input id="empresa" name="empresa" type="text" autocomplete="organization" class="w-full rounded-lg bg-slate-900 border border-white/10 px-4 py-3 text-sm placeholder-slate-500 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30 outline-none transition" placeholder="Nome da empresa">
-                            </div>
-                        </div>
-                        <div class="grid sm:grid-cols-2 gap-4">
-                            <div>
-                                <label for="telefone" class="block text-sm font-medium text-slate-300 mb-1.5">Telefone</label>
-                                <input id="telefone" name="telefone" type="tel" autocomplete="tel" class="w-full rounded-lg bg-slate-900 border border-white/10 px-4 py-3 text-sm placeholder-slate-500 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30 outline-none transition" placeholder="(00) 00000-0000">
-                            </div>
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-slate-300 mb-1.5">E-mail</label>
-                                <input id="email" name="email" type="email" required autocomplete="email" class="w-full rounded-lg bg-slate-900 border border-white/10 px-4 py-3 text-sm placeholder-slate-500 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30 outline-none transition" placeholder="voce@empresa.com.br">
-                            </div>
-                        </div>
-                        <div>
-                            <label for="mensagem" class="block text-sm font-medium text-slate-300 mb-1.5">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" rows="4" required class="w-full rounded-lg bg-slate-900 border border-white/10 px-4 py-3 text-sm placeholder-slate-500 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30 outline-none transition resize-none" placeholder="Descreva o escopo do seu projeto..."></textarea>
-                        </div>
-                        <div class="flex flex-col sm:flex-row gap-3">
-                            <button type="submit" class="btn btn-primary px-6 py-3.5"><i class="fa-solid fa-paper-plane"></i> Enviar mensagem</button>
-                            <a href="https://wa.me/5571999231020" data-whatsapp class="btn btn-whatsapp px-6 py-3.5"><i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp</a>
-                        </div>
-                        <!-- Mensagem de status do envio -->
-                        <p id="formStatus" role="status" aria-live="polite" class="text-sm hidden"></p>
-                    </form>
-                </div>
-
-                <!-- Mapa (placeholder do Google Maps embed — troque pela localização real) -->
-                <div data-reveal="right" class="rounded-2xl overflow-hidden border border-white/10 min-h-[420px] shadow-2xl">
-                    <!-- ALTERAÇÃO: novo endereço no mapa -->
-                    <iframe title="Localização ZUPOLY Projetos" src="https://www.google.com/maps?q=Rua+13+de+Maio,+280,+Centro,+Candeias+-+BA,+43805-000&output=embed" class="w-full h-full min-h-[420px]" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- ==================================================================
-         RODAPÉ
+         RODAPÉ (compartilhado entre as páginas)
          ================================================================== -->
     <footer class="bg-[#04080f] border-t border-white/5 pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-5 lg:px-8">
             <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
                 <div class="lg:col-span-2 max-w-sm">
-                    <!-- ALTERAÇÃO: nova logo -->
                     <img src="public/logo_nova.png" alt="ZUPOLY Projetos Ltda" class="h-10 w-auto" width="150" height="80">
                     <p class="mt-5 text-slate-400 text-sm leading-relaxed">Projetos industriais de tubulação 2D e 3D, modelagem, isométricos, layout industrial e engenharia mecânica — com precisão, qualidade e tecnologia.</p>
                     <div class="flex items-center gap-3 mt-6">
@@ -772,11 +343,12 @@
                 <div>
                     <h3 class="font-display font-semibold text-slate-100">Links rápidos</h3>
                     <ul class="mt-4 space-y-2.5 text-sm text-slate-400">
-                        <li><a href="#sobre" class="hover:text-brand-400 transition">Sobre</a></li>
-                        <li><a href="#servicos" class="hover:text-brand-400 transition">Serviços</a></li>
-                        <li><a href="#processo" class="hover:text-brand-400 transition">Processo</a></li>
-                        <li><a href="#portfolio" class="hover:text-brand-400 transition">Portfólio</a></li>
-                        <li><a href="#faq" class="hover:text-brand-400 transition">FAQ</a></li>
+                        <li><a href="index.html#sobre" class="hover:text-brand-400 transition">Sobre</a></li>
+                        <li><a href="servicos.html" class="hover:text-brand-400 transition">Serviços</a></li>
+                        <li><a href="treinamentos.html" class="hover:text-brand-400 transition">Treinamentos</a></li>
+                        <li><a href="processo.html" class="hover:text-brand-400 transition">Processo</a></li>
+                        <li><a href="portfolio.html" class="hover:text-brand-400 transition">Portfólio</a></li>
+                        <li><a href="faq.html" class="hover:text-brand-400 transition">FAQ</a></li>
                     </ul>
                 </div>
 
@@ -784,11 +356,8 @@
                     <h3 class="font-display font-semibold text-slate-100">Contato</h3>
                     <ul class="mt-4 space-y-2.5 text-sm text-slate-400">
                         <li class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-brand-400"></i> <a href="https://wa.me/5571999231020" data-whatsapp class="hover:text-brand-400 transition">(71) 99923-1020</a></li>
-                        <!-- ALTERAÇÃO: novo e-mail -->
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-400"></i> diretoria@zupoly@projetos.com.br</li>
-                        <!-- ALTERAÇÃO: novo endereço -->
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-400"></i> diretoria@zupolyprojetos.com.br</li>
                         <li class="flex items-start gap-2"><i class="fa-solid fa-location-dot text-brand-400 mt-1"></i> <span>Rua R 13 DE MAIO, 280, 2º andar, Centro<br>Candeias - BA · CEP 43.805-000</span></li>
-                        <!-- ALTERAÇÃO: CNPJ no rodapé -->
                         <li class="flex items-center gap-2"><i class="fa-solid fa-building text-brand-400"></i> CNPJ 04.120.157/0001-01</li>
                     </ul>
                 </div>
@@ -811,18 +380,9 @@
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <!-- Lightbox do portfólio -->
-    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visualização de imagem">
-        <button type="button" data-lightbox-close class="absolute top-5 right-5 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition" aria-label="Fechar">
-            <i class="fa-solid fa-xmark text-xl"></i>
-        </button>
-        <img src="" alt="">
-    </div>
-
     <!-- ====================== SCRIPTS ====================== -->
     <script src="assets/js/main.js" defer></script>
     <script src="assets/js/animations.js" defer></script>
-    <script src="assets/js/gallery.js" defer></script>
     <script src="assets/js/whatsapp.js" defer></script>
 </body>
 </html>
