@@ -90,17 +90,25 @@
         </div>
     </header>
 
-    <main id="conteudo" class="pt-28">
+    <main id="conteudo">
+        <!-- ALTERAÇÃO: cabeçalho da página (page hero) -->
+        <section class="pt-40 lg:pt-44 pb-14 bg-gradient-to-b from-slate-950 to-[#060d18] border-b border-white/5">
+            <div class="max-w-7xl mx-auto px-5 lg:px-8">
+                <nav class="text-xs text-slate-500 mb-4" aria-label="Trilha de navegação">
+                    <a href="index.html" class="hover:text-brand-400 transition">Início</a>
+                    <span class="mx-2">/</span>
+                    <span class="text-slate-300">Processo</span>
+                </nav>
+                <span class="text-brand-400 font-semibold uppercase tracking-widest text-sm">Como trabalhamos</span>
+                <h1 class="font-display text-4xl lg:text-5xl font-extrabold tracking-tight mt-3">Nosso processo</h1>
+                <p class="mt-4 text-slate-400 text-lg max-w-2xl">Da primeira conversa à entrega final, com transparência em cada etapa.</p>
+            </div>
+        </section>
+
         <!-- PROCESSO (Timeline) -->
         <section id="processo" class="py-24 lg:py-32 bg-slate-950/60 border-y border-white/5">
             <div class="max-w-6xl mx-auto px-5 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto" data-reveal>
-                    <span class="text-brand-400 font-semibold uppercase tracking-widest text-sm">Como trabalhamos</span>
-                    <h1 class="font-display text-3xl lg:text-4xl font-bold tracking-tight mt-3">Nosso processo</h1>
-                    <p class="mt-4 text-slate-400 text-lg">Da primeira conversa à entrega final, com transparência em cada etapa.</p>
-                </div>
-
-                <ol class="timeline mt-16 space-y-10 lg:space-y-0">
+                <ol class="timeline space-y-10 lg:space-y-0">
                     <li class="timeline-step relative pl-16 lg:pl-0" data-reveal data-reveal-delay="1">
                         <span class="timeline-dot w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center font-display font-bold text-lg absolute left-0 lg:static">1</span>
                         <h3 class="font-bold text-lg mt-0 lg:mt-0">Contato</h3>

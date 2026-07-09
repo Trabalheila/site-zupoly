@@ -90,17 +90,25 @@
         </div>
     </header>
 
-    <main id="conteudo" class="pt-28">
+    <main id="conteudo">
+        <!-- ALTERAÇÃO: cabeçalho da página (page hero) -->
+        <section class="pt-40 lg:pt-44 pb-14 bg-gradient-to-b from-slate-950 to-[#060d18] border-b border-white/5">
+            <div class="max-w-7xl mx-auto px-5 lg:px-8">
+                <nav class="text-xs text-slate-500 mb-4" aria-label="Trilha de navegação">
+                    <a href="index.html" class="hover:text-brand-400 transition">Início</a>
+                    <span class="mx-2">/</span>
+                    <span class="text-slate-300">Serviços</span>
+                </nav>
+                <span class="text-brand-400 font-semibold uppercase tracking-widest text-sm">O que fazemos</span>
+                <h1 class="font-display text-4xl lg:text-5xl font-extrabold tracking-tight mt-3">Nossos serviços</h1>
+                <p class="mt-4 text-slate-400 text-lg max-w-2xl">Soluções completas em engenharia e projetos industriais.</p>
+            </div>
+        </section>
+
         <!-- SERVIÇOS -->
         <section id="servicos" class="py-24 lg:py-32 bg-grid border-y border-white/5">
             <div class="max-w-7xl mx-auto px-5 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto" data-reveal>
-                    <span class="text-brand-400 font-semibold uppercase tracking-widest text-sm">O que fazemos</span>
-                    <h1 class="font-display text-3xl lg:text-4xl font-bold tracking-tight mt-3">Nossos serviços</h1>
-                    <p class="mt-4 text-slate-400 text-lg">Soluções completas em engenharia e projetos industriais.</p>
-                </div>
-
-                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <article class="service-card p-7" data-reveal data-reveal-delay="1">
                         <div class="service-icon w-14 h-14 bg-brand-500/10 text-brand-400 rounded-xl flex items-center justify-center text-2xl mb-5"><i class="fa-solid fa-pipe-valve"></i></div>
                         <h3 class="text-lg font-bold">Projeto de Tubulação</h3>

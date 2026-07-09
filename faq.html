@@ -90,16 +90,25 @@
         </div>
     </header>
 
-    <main id="conteudo" class="pt-28">
+    <main id="conteudo">
+        <!-- ALTERAÇÃO: cabeçalho da página (page hero) -->
+        <section class="pt-40 lg:pt-44 pb-14 bg-gradient-to-b from-slate-950 to-[#060d18] border-b border-white/5">
+            <div class="max-w-7xl mx-auto px-5 lg:px-8">
+                <nav class="text-xs text-slate-500 mb-4" aria-label="Trilha de navegação">
+                    <a href="index.html" class="hover:text-brand-400 transition">Início</a>
+                    <span class="mx-2">/</span>
+                    <span class="text-slate-300">FAQ</span>
+                </nav>
+                <span class="text-brand-400 font-semibold uppercase tracking-widest text-sm">Dúvidas frequentes</span>
+                <h1 class="font-display text-4xl lg:text-5xl font-extrabold tracking-tight mt-3">Perguntas &amp; Respostas</h1>
+                <p class="mt-4 text-slate-400 text-lg max-w-2xl">Tudo o que você precisa saber antes de começar seu projeto.</p>
+            </div>
+        </section>
+
         <!-- FAQ -->
         <section id="faq" class="py-24 lg:py-32 bg-slate-950/60 border-y border-white/5">
             <div class="max-w-3xl mx-auto px-5 lg:px-8">
-                <div class="text-center" data-reveal>
-                    <span class="text-brand-400 font-semibold uppercase tracking-widest text-sm">Dúvidas frequentes</span>
-                    <h1 class="font-display text-3xl lg:text-4xl font-bold tracking-tight mt-3">Perguntas &amp; Respostas</h1>
-                </div>
-
-                <div class="mt-12 space-y-4">
+                <div class="space-y-4">
                     <div class="faq-item bg-slate-900/60 border border-white/5 rounded-xl overflow-hidden" data-reveal>
                         <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 text-left px-6 py-5" aria-expanded="false">
                             <span class="font-semibold">Quais softwares são utilizados?</span>
